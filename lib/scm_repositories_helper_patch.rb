@@ -164,7 +164,7 @@ module ScmRepositoriesHelperPatch
                 end
                 note = content_tag('em', l(:text_github_repository_note_new), :class => 'info')
             elsif repository.new_record?
-                note = content_tag('em', '(https://github.com/....git)', :class => 'info')
+                note = content_tag('em', '(https://....git)', :class => 'info')
             end
 
             githubtags  = content_tag('p', urltag + note)
